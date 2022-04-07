@@ -20,7 +20,7 @@ var rollbar = new Rollbar({
 // record a generic message and send it to Rollbar
 // rollbar.log("hello world")
 
-app.get('/api/students', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/index.html'))
 })
 
